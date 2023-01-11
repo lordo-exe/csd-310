@@ -18,7 +18,6 @@ for doc in student_list:
     "\n  Last Name: " + doc["last_name"] + 
     "\n")
 
-
 result = students.update_one({"student_id": "1007"}, {"$set": {"last_name": "Brewster"}})
 
 freed = students.find_one({"student_id": "1007"})
