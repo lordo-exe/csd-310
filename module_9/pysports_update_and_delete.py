@@ -42,7 +42,6 @@ try:
     show_players(cursor, "DISPLAYING PLAYERS AFTER UPDATE")
 
     delete_player = ("DELETE FROM player WHERE first_name = 'Gollum'")
-
     cursor.execute(delete_player)
     show_players(cursor, "DISPLAYING PLAYERS AFTER DELETE")
 
