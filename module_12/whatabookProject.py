@@ -5,6 +5,7 @@
 from operator import truediv
 import mysql.connector
 from mysql.connector import errorcode
+
 # imports
 
 config = {
@@ -14,6 +15,7 @@ config = {
     "database": "whatabook",
     "raise_on_warnings": True
 }
+
 # MySQL user login
 
 db = mysql.connector.connect(**config)
@@ -91,7 +93,7 @@ def view_account (title):
         else:
             print ("\n Not a valid option, please try again! \n") # Error print for wrong selections
 
-# view_account function via user input menu. This include all WISHLIST MENU selections and commands
+# view_account function via user input menu. This includes all WISHLIST MENU selections and commands (while block)
 
 answer=True
 while answer:
