@@ -91,7 +91,7 @@ def view_account (title):
         else:
             print ("\n Not a valid option, please try again! \n") # Error print for wrong selections
 
-# view_stores function via user input menu
+# view_account function via user input menu. This include all WISHLIST MENU selections and commands
 
 answer=True
 while answer:
@@ -111,3 +111,5 @@ while answer:
       exit () # Exiting via users '4' selection
     else:
       print ("\n Not a valid option, please try again! \n") # Error print for wrong selections
+
+# This is the core MAIN MENU while command block
