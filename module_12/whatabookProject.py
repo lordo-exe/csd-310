@@ -1,5 +1,6 @@
 # Keril Ivanchuk
-# 02/16/2023
+# 02/16/2023 Started
+# 02/22/2023 Finished
 
 from operator import truediv
 import mysql.connector
