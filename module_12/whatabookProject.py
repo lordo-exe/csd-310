@@ -88,11 +88,10 @@ def view_account (title):
             user_remove_pick = input("What book ID do you want to remove? Type: ") # Input for book removal choice
             cursor.execute ("DELETE FROM wishlist WHERE user_id = %s AND book_id = %s", (user_id_input, user_remove_pick,)) # SQL command for removing the book
             db.commit()
-            print ("Book Successfully removed! \n") # Success print after removing a book from your wishlist
-
+            print ("Book Successfully removed! \n") # Success print after removing a book from your wishlistelse:
         else:
             print ("\n Not a valid option, please try again! \n") # Error print for wrong selections
-
+        
 # view_account function via user input menu. This includes all WISHLIST MENU selections and commands (while block)
 
 answer=True
